@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="f.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div class="login">
+        <h1 style="margin-left: 450px; ">Crop Yield Prediction</h1>
+    
+         <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}"method="post" style="margin-left: 450px;margin-top: 50px;">
+            <select id="country-state" name="state_names">
+                <option  >Select state </option>
+                <option value="0">Andaman and Nicobar Islands</option>
+                <option value="1">Andhra Pradesh</option>
+                <option value="2">Arunachal Pradesh</option>
+                <option value="3">Assam</option>
+                <option value="4">Bihar</option>
+                <option value="5">Chandigarh</option>
+                <option value="6">Chhattisgarh</option>
+                <option value="7">Dadra and Nagar Haveli</option>
+                <option value="8">Goa</option>
+                <option value="9">Gujarat</option>
+                <option value="10">Haryana</option>
+                <option value="11">Himachal Pradesh</option>
+                <option value="12">Jammu and Kashmir</option>
+                <option value="13">Jharkhand</option>
+                <option value="14">Karnataka</option>
+                <option value="15">Kerala</option>
+                <option value="16">Madhya Pradesh</option>
+                <option value="17">Maharashtra</option>
+                <option value="18">Manipur</option>
+                <option value="19">Meghalaya</option>
+                <option value="20">Mizoram</option>
+                <option value="21">Nagaland</option>
+                <option value="22">Odisha</option>
+                <option value="23">Puducherry</option>
+                <option value="24">Punjab</option>
+                <option value="25">Rajasthan</option>
+                <option value="26">Sikkim</option>
+                <option value="27">Tamil Nadu</option>
+                <option value="28">Telangana</option>
+                <option value="29">Tripura</option>
+                <option value="30">Uttar Pradesh</option>
+                <option value="31">Uttarakhand</option>
+                <option value="32">West Bengal</option>
+            </select><br><br>         
+            <select name="season_names" id="seasons">
+                <option  >Select season </option>
+                <option value="1">Kharif</option>
+                <option value="2">Whole Year</option>
+                <option value="3">Autumn</option>
+                <option value="4">Rabi</option>
+                <option value="5">Summer</option>
+                <option value="6">Winter</option>
+            </select><br><br>           
+            <select name="crop_names" id="crop">
+                <option  >Select Crop </option>
+                <option value="1">Arecanut</option>
+                <option value="2">Other Kharif pulses</option>
+                <option value="3">Rice</option>
+                <option value="4">Banana</option>
+                <option value="5">Cashewnut</option>
+                <option value="6">Coconut</option>
+                <option value="8">Sugarcane</option>
+                <option value="11">Black pepper</option>
+                <option value="12">Dry chillies</option>
+                <option value="13">other oilseeds</option>
+                <option value="10">Tapioca</option>
+                <option value="14">Turmeric</option>
+                <option value="19">Coconut</option>
+                <option value="20">Sugarcane</option>
+                <option value="21">Bajra</option>
+                <option value="22">Castor seed</option>
+                <option value="23">Cotton(lint)</option>
+                <option value="24">Horse-gram</option>
+                <option value="25">Jowar</option>
+                <option value="26">Korra</option>
+                <option value="27">Ragi</option>
+                <option value="28">Tobacco</option>
+                <option value="30">Wheat</option>
+                <option value="40">Potato</option>
+                <option value="34">Safflower</option>
+                <option value="35">Onion</option>
+                <option value="38">Small millets</option>
+                <option value="39">Coriander</option>
+                <option value="45">Brinjal</option>
+                <option value="44">Bhindi</option>
+                <option value="42">Soyabean</option>
+                <option value="43">Beans & Mutter(Vegetable)</option>
+                <option value="46">Citrus Fruit</option>
+                <option value="48">Grapes</option>
+                <option value="49">Mango</option>
+                <option value="50">Orange</option>
+                <option value="85">Carrot</option>
+                <option value="92">Rubber</option>
+                <option value="98">Tea</option>
+                <option value="99">Coffee</option>
+            </select><br><br>            
+                <input type="text" name="temperature" placeholder="temperature" required="required" /><br><br>
+                <input type="text" name="wind_speed" placeholder="wind speed" required="required" /><br><br>
+                <input type="text" name="precipitation" placeholder="precipitation" required="required" /><br><br>
+                <input type="text" name="humidity" placeholder="humidity" required="required" /><br><br>       
+            <select name="soil_type" id="soil">
+                <option  >Select soil type </option>
+                <option value="1">clay</option>
+                <option value="2">sandy</option>
+                <option value="3">peaty</option>
+                <option value="4">chalky</option>
+                <option value="5">silt</option>
+                <option value="6">silty</option>
+                <option value="7">loamy</option>
+            </select><br><br>
+        
+            <input type="text" name="N" placeholder="Nitrogen value" required="required" /><br><br>
+            <input type="text" name="P" placeholder="Phosphorus value" required="required" /><br><br>
+            <input type="text" name="K" placeholder="Potassium value" required="required" /><br>
+        <br>
+            
+            <button type="submit" class="btn btn-primary btn-block btn-large" style="margin-left: 40px;margin-top: 10px;">Predict</button>
+        </form>
+    
+       <br>
+       <br>
+     </div>
+</form>
+</body>
+</html>
