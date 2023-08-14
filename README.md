@@ -10,3 +10,6 @@ The main objectives of this project are:
 -->To give farmers a generic idea on how external factors (like temperature,rainfall etc.)can influence their yield.
 
 -->To Create a User Interface for Crop Yield Prediction System.
+
+
+Link to PPT :- https://docs.google.com/presentation/d/1R2g8fT5vu0ekczgj63kaKl4AvXaXXtVP/edit?usp=drive_link&ouid=105191186790125380243&rtpof=true&sd=true
