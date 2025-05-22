@@ -5,7 +5,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-green?logo=bootstrap)
 
 ## Overview
-This project is a web-based Crop Yield Prediction system that leverages machine learning (XGBoost) to predict expected crop yield per acre based on user inputs such as location, season, crop type, weather, and soil parameters. It features a modern, responsive UI and robust backend validation for a seamless user experience.
+This project is a web-based Crop Yield Prediction system that leverages machine learning (XGBoost) to predict expected crop yield per acre based on user inputs such as location, season, crop type, weather, and soil parameters. 
 
 ## Features
 - Predict crop yield (quintals/acre) using a trained XGBoost model
@@ -64,7 +64,7 @@ This project is a web-based Crop Yield Prediction system that leverages machine 
 ## Requirements
 - Python 3.8+
 - Flask
-- numpy, pickle, xgboost (for model training, already trained model provided)
+- Numpy, Pickle, XGBoost (for model training, already trained model provided)
 
 
 ## Documentation
