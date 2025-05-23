@@ -41,11 +41,11 @@ This project is a web-based Crop Yield Prediction system that leverages machine 
 
 **Main Input Form:**
 
-![Main Input Form](static/UI_input.jpg)
+<img src="static/UI_input.jpg" alt="Main Input Form" width="400"/>
 
 **Prediction Output Example:**
 
-![Prediction Output](static/UI_output.jpg)
+<img src="static/UI_output.jpg" alt="Prediction Output" width="400"/>
 
 ## Project Structure
 ```
@@ -56,7 +56,7 @@ This project is a web-based Crop Yield Prediction system that leverages machine 
 │   ├── predict.html        # Prediction result page
 │   └── error.html          # Error page
 ├── complete_dataset.csv    # (Optional) Source data
-├── final_code.ipynb        # (Optional) Model training notebook
+├── model_training_script.ipynb  # (Optional) Model training notebook
 ├── README.md
 └── requirements.txt        # Python dependencies
 ```
