@@ -1,4 +1,4 @@
-# Crop Yield Prediction Project
+# Crop Yield Prediction System
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-lightgrey?logo=flask)
